@@ -1,0 +1,222 @@
+// ============================================
+// FEATURED DEVELOPER PROJECTS
+// ============================================
+export const featuredProjects = [
+  {
+    title: "Coresightbot",
+    subtitle: "Multi-Chain DeFi Intelligence Platform",
+    description:
+      "Built a multi-chain data indexing engine in Java serving 8,000+ users across Solana, Arbitrum, Ethereum, and Base. Developed an alpha detection system that scans Solana to deliver top-running tokens with a 78% win rate — successfully calling tokens that yielded 300x, 400x, and 500x returns ($kabuto, $neo, $yaranaika). Created CORA, an autonomous trading agent that executes trades on alpha alerts using user-defined preset strategies. Secured a competitive development grant from Superteam.",
+    image: "/CS 2-80.jpg",
+    link: "https://t.me/coresight_bot",
+    liveUrl: "https://t.me/coresight_bot",
+    tags: ["Java", "Spring Boot", "Solana", "Ethereum", "Base", "Arbitrum", "WebSockets", "Docker"],
+    badges: ["Superteam Grantee", "8,000+ Users"],
+    stats: [
+      { value: "8K+", label: "Active Users" },
+      { value: "78%", label: "Win Rate" },
+      { value: "500x", label: "Best Call" },
+      { value: "4", label: "Chains" },
+    ],
+    category: "featured",
+    accentColor: "cyan",
+  },
+  {
+    title: "SC0PE",
+    subtitle: "AI-Powered DeFi Trading Terminal",
+    description:
+      "Built and launched a DeFi trading terminal leveraging the 0G tech stack to simplify AI-powered trading on 0G, Ethereum, Base, and BSC. Scaled the platform to 3,200+ users within 3 months and became the #1 analytics tool in the 0G ecosystem. Features AI agents for smart whale detection, community health scoring, risk assessment, and real-time pattern recognition across chains.",
+    image: "/sc0pe-cover.jpg",
+    link: "https://sc0pe.xyz",
+    liveUrl: "https://sc0pe.xyz",
+    tags: ["Next.js", "TypeScript", "0G Chain", "Ethereum", "Base", "BSC", "AI Agents", "On-chain Analytics"],
+    badges: ["#1 in 0G Ecosystem", "3,200+ Users"],
+    stats: [
+      { value: "3.2K+", label: "Users" },
+      { value: "3mo", label: "To Scale" },
+      { value: "#1", label: "0G Ecosystem" },
+      { value: "4", label: "Chains" },
+    ],
+    category: "featured",
+    accentColor: "purple",
+    note: "Platform sunsetted — project archived",
+  },
+  {
+    title: "Predictefy",
+    subtitle: "Prediction Market Data Aggregator",
+    description:
+      "Built a data normalization engine to standardize inconsistent schemas and status flags from 5+ prediction markets including Polymarket and Kalshi, enabling clean data aggregation for the frontend. Created a market filtering and Closed Market detection system that parses multiple date and status formats. Developed the market discovery UI using Next.js with custom state-driven sorting to resolve pagination bottlenecks and manage thousands of real-time market rows smoothly.",
+    image: "/predictefy logo.png",
+    link: "https://predictefy.com",
+    liveUrl: "https://predictefy.com",
+    tags: ["Next.js", "TypeScript", "Python", "Data Normalization", "ETL", "REST APIs", "PostgreSQL"],
+    badges: ["5+ Markets Integrated"],
+    stats: [
+      { value: "5+", label: "Markets Integrated" },
+      { value: "1000s", label: "Real-time Rows" },
+      { value: "ETL", label: "Pipeline Built" },
+    ],
+    category: "featured",
+    accentColor: "amber",
+  },
+]
+
+// ============================================
+// SQL ANALYTICS PROJECTS (Dune + Flipside)
+// ============================================
+export const sqlProjects = [
+  {
+    title: "THX Network Analysis",
+    description: "Comprehensive analysis of THX Network's token distribution and user engagement metrics.",
+    image: "/blockchain-growth-dashboard.png",
+    link: "https://dune.com/queries/3851503",
+    client: "THX Network",
+    tags: ["Token Distribution", "User Engagement", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "OLAS Token Distribution",
+    description: "Detailed analysis of OLAS token distribution patterns and holder demographics.",
+    image: "/token-distribution-dashboard.png",
+    link: "https://dune.com/cryptall/olas-token-distribution",
+    client: "OLAS Network",
+    tags: ["Token Distribution", "Holder Analysis", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "GU Trade Analysis",
+    description: "Trading patterns and market analysis for GU Factory's digital assets.",
+    image: "/financial-market-overview.png",
+    link: "https://dune.com/cryptall/gu-trade",
+    client: "GU Factory",
+    tags: ["Trading Analysis", "Market Metrics", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "LSTache Performance Tracking",
+    description: "Performance analysis and metrics tracking for LSTache protocol.",
+    image: "/performance-dashboard-lines.png",
+    link: "https://dune.com/queries/4340943",
+    client: "LSTache",
+    tags: ["Performance Metrics", "Protocol Analysis", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "Agents.fun Analytics",
+    description: "User engagement and platform metrics for the Agents.fun platform.",
+    image: "/user-engagement-heatmap-dashboard.png",
+    link: "https://dune.com/cryptall/agentsdotfun",
+    client: "Agents.fun",
+    tags: ["User Engagement", "Platform Metrics", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "AG Sniper Bot Analysis",
+    description: "Performance tracking and strategy analysis for AG Sniper Bot.",
+    image: "/bot-performance-overview.png",
+    link: "https://dune.com/ag_bot/ag-sniper-bot",
+    client: "AG Sniper Bot",
+    tags: ["Bot Performance", "Strategy Analysis", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "EVM Token Analyzer",
+    description: "Comprehensive token analysis tool for EVM-compatible blockchains.",
+    image: "/crypto-token-dashboard.png",
+    link: "https://dune.com/my_copilot_bae/evm-token-analyzer",
+    client: "Copilot BAE",
+    tags: ["Token Analysis", "EVM", "Multi-chain", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "LSD Investment Opportunities",
+    description: "Research on the best Liquid Staking Derivative investment opportunities on Ethereum.",
+    image: "/investment-dashboard-comparison.png",
+    link: "https://dune.com/cryptall/market-opportunities-research",
+    client: "Independent Research",
+    tags: ["LSD", "Investment Research", "Ethereum", "Dune Analytics"],
+    category: "sql",
+  },
+  {
+    title: "Sei DeFi Ecosystem Analysis",
+    description: "Comprehensive analysis of the DeFi ecosystem on the Sei blockchain.",
+    image: "/sei-defi-dashboard.png",
+    link: "https://flipsidecrypto.xyz/cryptall/sei-defi-world-ShOoiL",
+    client: "Independent Research",
+    tags: ["Sei", "DeFi", "Ecosystem Analysis", "Flipside Crypto"],
+    category: "sql",
+  },
+  {
+    title: "NEAR Protocol Staking Analysis",
+    description: "In-depth analysis of staking patterns and validator performance on the NEAR Protocol.",
+    image: "/near-staking-dashboard.png",
+    link: "https://flipsidecrypto.xyz/cryptall/staking-on-near-protocol-Cg2v0h",
+    client: "Independent Research",
+    tags: ["NEAR Protocol", "Staking", "Validator Analysis", "Flipside Crypto"],
+    category: "sql",
+  },
+  {
+    title: "Thorchain RUNE Analysis",
+    description: "Detailed analysis of RUNE token metrics, liquidity pools, and trading patterns on Thorchain.",
+    image: "/thorchain-rune-analysis.png",
+    link: "https://flipsidecrypto.xyz/cryptall/analyzing-rune-IYdmTX",
+    client: "Independent Research",
+    tags: ["Thorchain", "RUNE", "Token Analysis", "Flipside Crypto"],
+    category: "sql",
+  },
+  {
+    title: "Burrow Finance on NEAR Protocol",
+    description: "Performance analysis and user behavior study of Burrow Finance on the NEAR Protocol.",
+    image: "/burrow-finance-dashboard.png",
+    link: "https://flipsidecrypto.xyz/cryptall/burrow-finance-on-near-protocol-ntDZLj",
+    client: "Independent Research",
+    tags: ["NEAR Protocol", "Burrow Finance", "DeFi", "Lending", "Flipside Crypto"],
+    category: "sql",
+  },
+]
+
+// ============================================
+// PYTHON ANALYTICS PROJECTS (Kaggle)
+// ============================================
+export const pythonProjects = [
+  {
+    title: "Whales Market Fees: ETH vs SOL",
+    description: "Comparative analysis of transaction fees for whale addresses on Ethereum and Solana networks.",
+    image: "/eth-sol-fees-comparison.png",
+    link: "https://www.kaggle.com/code/omojoallwell/comparison-of-whales-market-fees-on-eth-and-sol",
+    tags: ["Ethereum", "Solana", "Fee Analysis", "Python", "Pandas"],
+    category: "python",
+  },
+  {
+    title: "Oracle Price Feed Analysis",
+    description: "Analysis of oracle price feeds accuracy and reliability across different blockchain networks.",
+    image: "/oracle-price-feed.png",
+    link: "https://www.kaggle.com/code/omojoallwell/oracle-price-feed-analysis",
+    tags: ["Oracles", "Price Feeds", "Data Reliability", "Python", "Time Series"],
+    category: "python",
+  },
+  {
+    title: "ETH DEX Performance Comparison",
+    description: "Comparative analysis of performance metrics for major decentralized exchanges on Ethereum.",
+    image: "/eth-dex-comparison.png",
+    link: "https://www.kaggle.com/code/omojoallwell/comparison-of-eth-dex-performance",
+    tags: ["DEX", "Ethereum", "Performance Analysis", "Python", "Matplotlib"],
+    category: "python",
+  },
+  {
+    title: "ERC20 Transfers Analysis",
+    description: "In-depth analysis of ERC20 token transfer patterns and user behaviors on Ethereum.",
+    image: "/erc20-transfers.png",
+    link: "https://www.kaggle.com/code/omojoallwell/assignment-on-erc20",
+    tags: ["ERC20", "Token Transfers", "User Behavior", "Python", "NetworkX"],
+    category: "python",
+  },
+  {
+    title: "Top Sell Volume on Solana",
+    description: "Analysis of top selling patterns and volume distribution on the Solana blockchain.",
+    image: "/solana-sell-volume.png",
+    link: "https://www.kaggle.com/code/omojoallwell/top-sell-volume-on-sol-23-12-24",
+    tags: ["Solana", "Trading Volume", "Market Analysis", "Python", "Seaborn"],
+    category: "python",
+  },
+]
