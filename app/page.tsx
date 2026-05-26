@@ -14,6 +14,7 @@ const stats = [
   { value: "8K+", label: "Coresightbot Users" },
   { value: "3.2K+", label: "SC0PE Users" },
   { value: "78%", label: "Alpha Win Rate" },
+  { value: "70+", label: "Web3 Projects" },
   { value: "650+", label: "Students Taught" },
   { value: "5yrs", label: "DeFi Experience" },
 ]
@@ -132,7 +133,7 @@ export default function Home() {
         {/* ── STATS BAR ── */}
         <section className="py-10 px-6 border-y" style={{ borderColor: "var(--clr-card-border)", background: "var(--clr-bg2)" }}>
           <div className="container mx-auto max-w-7xl">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {stats.map((s) => (
                 <div key={s.label} className="stat-card">
                   <div className="stat-value">{s.value}</div>
@@ -154,19 +155,27 @@ export default function Home() {
                   I build things that ship.
                 </h2>
                 <p style={{ color: "#64748b", lineHeight: 1.8 }}>
-                  I&apos;m a data-focused full-stack developer with deep roots in Web3. Over the last 5+ years I&apos;ve
-                  designed ETL systems, built multi-chain indexing engines, shipped production dApps, and taught hundreds
-                  of developers how to work with on-chain data.
+                  Full-stack developer with 5+ years of experience building infrastructure and products in Web3.
+                  I&apos;ve worked with 70+ projects, protocols, and professional traders - from multi-chain indexing engines
+                  and autonomous trading agents to AI-powered analytics platforms used by thousands of people globally.
                 </p>
                 <p style={{ color: "#64748b", lineHeight: 1.8 }}>
-                  My stack is broad - Java backend systems, TypeScript/Next.js frontends, Python data pipelines -
-                  but my focus is always on engineering things that are fast, scalable, and actually useful.
+                  My stack is broad - Java backends, Next.js frontends, Python data pipelines - but the goal is always
+                  the same: build fast, scalable tools that real people actually use.
+                </p>
+                <p style={{ color: "#64748b", lineHeight: 1.8 }}>
+                  Passionate about solving real-world problems in crypto trading and dedicated to building tools that
+                  make data-driven decisions more accessible.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   <span className="badge-glow">Superteam Grantee</span>
                   <span style={{ background: "rgba(167,139,250,0.12)", border: "1px solid rgba(167,139,250,0.3)", color: "#a78bfa" }}
                         className="badge-glow">
                     #1 in 0G Ecosystem
+                  </span>
+                  <span style={{ background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.3)", color: "#f59e0b" }}
+                        className="badge-glow">
+                    70+ Web3 Projects
                   </span>
                 </div>
               </div>
