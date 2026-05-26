@@ -7,6 +7,7 @@ import dynamic from "next/dynamic"
 import Navbar from "@/components/navbar"
 import { AnalyticsCard } from "@/components/project-card"
 import { featuredProjects, sqlProjects, pythonProjects } from "@/lib/projects"
+import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/scroll-animation"
 
 const TerminalWidget = dynamic(() => import("@/components/terminal-widget"), { ssr: false })
 
@@ -98,8 +99,14 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-12">
 
               {/* Left */}
-              <div className="flex-1 space-y-6 animate-fade-in-up">
-                <div className="section-label">Available for opportunities</div>
+              <FadeInUp className="flex-1 space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                  </span>
+                  Available for opportunities
+                </div>
                 <h1 style={{ fontFamily: "var(--font-space-grotesk)", lineHeight: 1.05 }}
                     className="text-6xl md:text-7xl lg:text-8xl font-bold text-white">
                   Alewu <span className="gradient-text">Allwell</span>
@@ -120,12 +127,12 @@ export default function Home() {
                     <Download size={16} /> Download CV
                   </a>
                 </div>
-              </div>
+              </FadeInUp>
 
               {/* Right - Terminal */}
-              <div className="flex-1 w-full animate-fade-in-up delay-300">
+              <FadeInUp delay={0.3} className="flex-1 w-full">
                 <TerminalWidget />
-              </div>
+              </FadeInUp>
             </div>
           </div>
         </section>
@@ -133,14 +140,16 @@ export default function Home() {
         {/* ── STATS BAR ── */}
         <section className="py-10 px-6 border-y" style={{ borderColor: "var(--clr-card-border)", background: "var(--clr-bg2)" }}>
           <div className="container mx-auto max-w-7xl">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {stats.map((s) => (
-                <div key={s.label} className="stat-card">
-                  <div className="stat-value">{s.value}</div>
-                  <div className="stat-label">{s.label}</div>
-                </div>
+                <StaggerItem key={s.label}>
+                  <div className="stat-card h-full">
+                    <div className="stat-value">{s.value}</div>
+                    <div className="stat-label">{s.label}</div>
+                  </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
 
@@ -148,7 +157,7 @@ export default function Home() {
         <section id="about" className="py-20 px-6">
           <div className="container mx-auto max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-5">
+              <FadeInUp className="space-y-5">
                 <div className="section-label">About</div>
                 <h2 style={{ fontFamily: "var(--font-space-grotesk)" }}
                     className="text-3xl md:text-4xl font-bold text-white">
@@ -178,8 +187,8 @@ export default function Home() {
                     70+ Web3 Projects
                   </span>
                 </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
+              </FadeInUp>
+              <FadeInUp delay={0.2} className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Backend Systems", desc: "Java, Spring Boot, Node.js - building the engines that power products." },
                   { label: "Frontend", desc: "Next.js, TypeScript, React - shipping clean, fast user interfaces." },
@@ -193,7 +202,7 @@ export default function Home() {
                     <p style={{ color: "#64748b", fontSize: "0.82rem", lineHeight: 1.6 }}>{item.desc}</p>
                   </div>
                 ))}
-              </div>
+              </FadeInUp>
             </div>
           </div>
         </section>
@@ -206,9 +215,9 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-bold text-white mb-12">
               Where I&apos;ve Worked
             </h2>
-            <div className="timeline">
+            <StaggerContainer className="timeline">
               {experience.map((job) => (
-                <div key={job.company} className="timeline-item">
+                <StaggerItem key={job.company} className="timeline-item">
                   <div className="glass-card p-6 md:p-8">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
                       <div>
@@ -237,9 +246,9 @@ export default function Home() {
                       ))}
                     </ul>
                   </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
 
@@ -251,9 +260,9 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-bold text-white mb-10">
               Tools &amp; Technologies
             </h2>
-            <div className="space-y-6">
+            <StaggerContainer className="space-y-6">
               {Object.entries(techStack).map(([group, items]) => (
-                <div key={group} className="flex flex-col sm:flex-row gap-3">
+                <StaggerItem key={group} className="flex flex-col sm:flex-row gap-3">
                   <div className="shrink-0 w-44">
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", color: "#475569", textTransform: "uppercase", letterSpacing: "0.08em" }}>
                       {group}
@@ -264,9 +273,9 @@ export default function Home() {
                       <span key={item} className="tech-chip">{item}</span>
                     ))}
                   </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
 
@@ -278,11 +287,11 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-bold text-white mb-12">
               Things I&apos;ve Built
             </h2>
-            <div className="space-y-8">
+            <StaggerContainer className="space-y-8">
               {featuredProjects.map((project) => {
                 const accent = accentColors[project.accentColor] ?? "var(--clr-cyan)"
                 return (
-                  <div key={project.title} className="featured-project">
+                  <StaggerItem key={project.title} className="featured-project">
                     <div className="flex flex-col lg:flex-row">
                       {/* Image */}
                       <div className="relative lg:w-2/5 h-56 lg:h-auto overflow-hidden" style={{ minHeight: 220 }}>
@@ -354,10 +363,10 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </StaggerItem>
                 )
               })}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
 
@@ -382,11 +391,13 @@ export default function Home() {
                 </span>
                 <span style={{ color: "#475569", fontSize: "0.82rem" }}>Dune Analytics &amp; Flipside Crypto</span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {sqlProjects.map((p) => (
-                  <AnalyticsCard key={p.title} project={p as any} />
+                  <StaggerItem key={p.title}>
+                    <AnalyticsCard project={p as any} />
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* Python */}
@@ -397,11 +408,13 @@ export default function Home() {
                 </span>
                 <span style={{ color: "#475569", fontSize: "0.82rem" }}>Kaggle Analyses</span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {pythonProjects.map((p) => (
-                  <AnalyticsCard key={p.title} project={p as any} />
+                  <StaggerItem key={p.title}>
+                    <AnalyticsCard project={p as any} />
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
             </div>
           </div>
         </section>
@@ -409,7 +422,7 @@ export default function Home() {
         {/* ── CONTACT ── */}
         <section id="contact" className="py-20 px-6" style={{ background: "var(--clr-bg2)" }}>
           <div className="container mx-auto max-w-7xl">
-            <div className="max-w-xl mx-auto text-center">
+            <FadeInUp className="max-w-xl mx-auto text-center">
               <div className="section-label" style={{ justifyContent: "center" }}>Contact</div>
               <h2 style={{ fontFamily: "var(--font-space-grotesk)" }}
                   className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -434,7 +447,7 @@ export default function Home() {
                   </a>
                 ))}
               </div>
-            </div>
+            </FadeInUp>
           </div>
         </section>
 
