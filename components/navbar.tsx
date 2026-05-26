@@ -31,27 +31,7 @@ export default function Navbar() {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <span
-              style={{
-                fontFamily: "var(--font-space-grotesk)",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: 36,
-                height: 36,
-                borderRadius: 8,
-                background: "var(--clr-cyan-dim)",
-                border: "1px solid var(--clr-cyan-border)",
-                color: "var(--clr-cyan)",
-                fontWeight: 700,
-                fontSize: "0.85rem",
-                letterSpacing: "0.05em",
-              }}
-            >
-              AA
-            </span>
-          </Link>
+          <div className="flex items-center gap-2 group w-10"></div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">

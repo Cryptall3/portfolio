@@ -12,12 +12,10 @@ import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/scroll-ani
 const TerminalWidget = dynamic(() => import("@/components/terminal-widget"), { ssr: false })
 
 const stats = [
-  { value: "8K+", label: "Coresightbot Users" },
-  { value: "3.2K+", label: "SC0PE Users" },
-  { value: "78%", label: "Alpha Win Rate" },
-  { value: "70+", label: "Web3 Projects" },
-  { value: "650+", label: "Students Taught" },
-  { value: "5yrs", label: "DeFi Experience" },
+  { value: "11K+", label: "Total Users on Apps Developed" },
+  { value: "70+", label: "Client Projects Across All Stacks" },
+  { value: "20+", label: "Chains Worked With" },
+  { value: "5+ Yrs", label: "Experience" },
 ]
 
 const experience = [
@@ -100,13 +98,6 @@ export default function Home() {
 
               {/* Left */}
               <FadeInUp className="flex-1 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-                  </span>
-                  Available for opportunities
-                </div>
                 <h1 style={{ fontFamily: "var(--font-space-grotesk)", lineHeight: 1.05 }}
                     className="text-6xl md:text-7xl lg:text-8xl font-bold text-white">
                   Alewu <span className="gradient-text">Allwell</span>
@@ -140,7 +131,7 @@ export default function Home() {
         {/* ── STATS BAR ── */}
         <section className="py-10 px-6 border-y" style={{ borderColor: "var(--clr-card-border)", background: "var(--clr-bg2)" }}>
           <div className="container mx-auto max-w-7xl">
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {stats.map((s) => (
                 <StaggerItem key={s.label}>
                   <div className="stat-card h-full">
@@ -176,17 +167,6 @@ export default function Home() {
                   Passionate about solving real-world problems in crypto trading and dedicated to building tools that
                   make data-driven decisions more accessible.
                 </p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="badge-glow">Superteam Grantee</span>
-                  <span style={{ background: "rgba(167,139,250,0.12)", border: "1px solid rgba(167,139,250,0.3)", color: "#a78bfa" }}
-                        className="badge-glow">
-                    #1 in 0G Ecosystem
-                  </span>
-                  <span style={{ background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.3)", color: "#f59e0b" }}
-                        className="badge-glow">
-                    70+ Web3 Projects
-                  </span>
-                </div>
               </FadeInUp>
               <FadeInUp delay={0.2} className="grid grid-cols-2 gap-4">
                 {[

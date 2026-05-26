@@ -17,7 +17,7 @@ interface AnalyticsProject {
 export function AnalyticsCard({ project }: { project: AnalyticsProject }) {
   const isSql = project.category === "sql"
   return (
-    <div className="analytics-card group">
+    <Link href={project.link} target="_blank" rel="noopener noreferrer" className="analytics-card group block">
       <div className="relative h-36 overflow-hidden">
         <Image
           src={project.image || "/placeholder.svg"}
@@ -54,17 +54,11 @@ export function AnalyticsCard({ project }: { project: AnalyticsProject }) {
           >
             {project.title}
           </h4>
-          <Link
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 mt-0.5"
-            style={{ color: "#475569" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "var(--clr-cyan)")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#475569")}
+          <div
+            className="shrink-0 mt-0.5 text-slate-500 group-hover:text-cyan-400 transition-colors"
           >
             <ExternalLink size={13} />
-          </Link>
+          </div>
         </div>
         {project.client && (
           <p className="text-xs mb-2" style={{ color: "var(--clr-amber)", fontFamily: "var(--font-mono)" }}>
@@ -90,7 +84,7 @@ export function AnalyticsCard({ project }: { project: AnalyticsProject }) {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
