@@ -5,13 +5,12 @@ import { useState, useEffect } from "react"
 const terminalLines = [
   { parts: [{ text: 'const role', cls: "cmd" }, { text: " = ", cls: "" }, { text: '"Full-Stack Developer"', cls: "str" }] },
   { parts: [{ text: 'const stacks', cls: "cmd" }, { text: " = ", cls: "" }, { text: '["Java", "Next.js", "TypeScript", "Python"]', cls: "str" }] },
-  { parts: [{ text: "// Coresightbot", cls: "cmt" }] },
-  { parts: [{ text: "users.active", cls: "cmd" }, { text: " = ", cls: "" }, { text: "8_000", cls: "val" }, { text: " // 4 chains", cls: "cmt" }] },
-  { parts: [{ text: "alphaWinRate", cls: "cmd" }, { text: " = ", cls: "" }, { text: '"78%"', cls: "str" }, { text: " // 500x peak", cls: "cmt" }] },
-  { parts: [{ text: "grant", cls: "cmd" }, { text: " = ", cls: "" }, { text: '"Superteam ✓"', cls: "val" }] },
-  { parts: [{ text: "// SC0PE", cls: "cmt" }] },
-  { parts: [{ text: "sc0pe.users", cls: "cmd" }, { text: " = ", cls: "" }, { text: "3_200", cls: "val" }, { text: " // #1 in 0G", cls: "cmt" }] },
-  { parts: [{ text: "status", cls: "cmd" }, { text: " = ", cls: "" }, { text: '"Available for hire"', cls: "str" }] },
+  { parts: [{ text: "// Global Impact", cls: "cmt" }] },
+  { parts: [{ text: "users.total", cls: "cmd" }, { text: " = ", cls: "" }, { text: '"11,000+"', cls: "str" }, { text: " // On apps developed", cls: "cmt" }] },
+  { parts: [{ text: "clientProjects", cls: "cmd" }, { text: " = ", cls: "" }, { text: "70", cls: "val" }, { text: " // Across all stacks", cls: "cmt" }] },
+  { parts: [{ text: "chainsWorkedWith", cls: "cmd" }, { text: " = ", cls: "" }, { text: "20", cls: "val" }] },
+  { parts: [{ text: "experience.years", cls: "cmd" }, { text: " = ", cls: "" }, { text: "5", cls: "val" }] },
+  { parts: [{ text: "status", cls: "cmd" }, { text: " = ", cls: "" }, { text: '"Building..."', cls: "str" }] },
 ]
 
 export default function TerminalWidget() {
