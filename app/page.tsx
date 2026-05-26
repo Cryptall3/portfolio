@@ -27,7 +27,7 @@ const experience = [
     color: "var(--clr-cyan)",
     bullets: [
       "Built a multi-chain data indexing engine in Java serving 8,000+ users across Solana, Arbitrum, Ethereum, and Base.",
-      "Developed an alpha detection system scanning Solana with a 78% win rate — called tokens yielding 300x, 400x, and 500x returns ($kabuto, $neo, $yaranaika).",
+      "Developed an alpha detection system scanning Solana with a 78% win rate - called tokens yielding 300x, 400x, and 500x returns ($kabuto, $neo, $yaranaika).",
       "Created CORA, an autonomous trading agent that executes trades on alpha alerts using user-preset strategies.",
       "Secured a competitive development grant from Superteam by demonstrating technical scalability and code quality.",
     ],
@@ -46,7 +46,7 @@ const experience = [
   },
   {
     company: "Nirvana Academy",
-    role: "Tutor — DeFi Operations & Analytics",
+    role: "Tutor - DeFi Operations & Analytics",
     period: "Apr 2025 – Dec 2025",
     type: "Part-Time",
     color: "#a78bfa",
@@ -121,7 +121,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right — Terminal */}
+              {/* Right - Terminal */}
               <div className="flex-1 w-full animate-fade-in-up delay-300">
                 <TerminalWidget />
               </div>
@@ -159,7 +159,7 @@ export default function Home() {
                   of developers how to work with on-chain data.
                 </p>
                 <p style={{ color: "#64748b", lineHeight: 1.8 }}>
-                  My stack is broad — Java backend systems, TypeScript/Next.js frontends, Python data pipelines —
+                  My stack is broad - Java backend systems, TypeScript/Next.js frontends, Python data pipelines -
                   but my focus is always on engineering things that are fast, scalable, and actually useful.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
@@ -172,8 +172,8 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: "Backend Systems", desc: "Java, Spring Boot, Node.js — building the engines that power products." },
-                  { label: "Frontend", desc: "Next.js, TypeScript, React — shipping clean, fast user interfaces." },
+                  { label: "Backend Systems", desc: "Java, Spring Boot, Node.js - building the engines that power products." },
+                  { label: "Frontend", desc: "Next.js, TypeScript, React - shipping clean, fast user interfaces." },
                   { label: "Data Engineering", desc: "ETL pipelines, normalization engines, data warehousing at scale." },
                   { label: "Web3 Native", desc: "On-chain indexing, DeFi protocols, multi-chain infrastructure." },
                 ].map((item) => (
@@ -361,7 +361,7 @@ export default function Home() {
               On-Chain Research
             </h2>
             <p style={{ color: "#64748b", marginBottom: 48, maxWidth: 560 }}>
-              SQL dashboards and Python analyses across Dune Analytics, Flipside Crypto, and Kaggle —
+              SQL dashboards and Python analyses across Dune Analytics, Flipside Crypto, and Kaggle -
               covering DeFi protocols, token distributions, and cross-chain market research.
             </p>
 
@@ -434,7 +434,7 @@ export default function Home() {
           <div className="container mx-auto max-w-7xl">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <span style={{ fontFamily: "var(--font-space-grotesk)", color: "#475569", fontSize: "0.85rem" }}>
-                © {new Date().getFullYear()} Alewu Allwell — Full-Stack Developer
+                © {new Date().getFullYear()} Alewu Allwell - Full-Stack Developer
               </span>
               <div className="flex items-center gap-5">
                 {[

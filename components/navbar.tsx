@@ -33,10 +33,23 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <span
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
-              className="text-lg font-700 text-white"
+              style={{
+                fontFamily: "var(--font-space-grotesk)",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 36,
+                height: 36,
+                borderRadius: 8,
+                background: "var(--clr-cyan-dim)",
+                border: "1px solid var(--clr-cyan-border)",
+                color: "var(--clr-cyan)",
+                fontWeight: 700,
+                fontSize: "0.85rem",
+                letterSpacing: "0.05em",
+              }}
             >
-              Alewu<span style={{ color: "var(--clr-cyan)" }}>.</span>
+              AA
             </span>
           </Link>
 

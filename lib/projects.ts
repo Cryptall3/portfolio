@@ -6,7 +6,7 @@ export const featuredProjects = [
     title: "Coresightbot",
     subtitle: "Multi-Chain DeFi Intelligence Platform",
     description:
-      "Built a multi-chain data indexing engine in Java serving 8,000+ users across Solana, Arbitrum, Ethereum, and Base. Developed an alpha detection system that scans Solana to deliver top-running tokens with a 78% win rate — successfully calling tokens that yielded 300x, 400x, and 500x returns ($kabuto, $neo, $yaranaika). Created CORA, an autonomous trading agent that executes trades on alpha alerts using user-defined preset strategies. Secured a competitive development grant from Superteam.",
+      "Built a multi-chain data indexing engine in Java serving 8,000+ users across Solana, Arbitrum, Ethereum, and Base. Developed an alpha detection system that scans Solana to deliver top-running tokens with a 78% win rate - successfully calling tokens that yielded 300x, 400x, and 500x returns ($kabuto, $neo, $yaranaika). Created CORA, an autonomous trading agent that executes trades on alpha alerts using user-defined preset strategies. Secured a competitive development grant from Superteam.",
     image: "/CS 2-80.jpg",
     link: "https://t.me/coresight_bot",
     liveUrl: "https://t.me/coresight_bot",
@@ -39,7 +39,7 @@ export const featuredProjects = [
     ],
     category: "featured",
     accentColor: "purple",
-    note: "Platform sunsetted — project archived",
+    note: "Platform sunsetted - project archived",
   },
   {
     title: "Predictefy",
