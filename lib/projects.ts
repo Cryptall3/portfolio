@@ -10,7 +10,16 @@ export const featuredProjects = [
     image: "/CS 2-80.jpg",
     link: "https://t.me/coresight_bot",
     liveUrl: "https://t.me/coresight_bot",
-    tags: ["Java", "Spring Boot", "Solana", "Ethereum", "Base", "Arbitrum", "WebSockets", "Docker"],
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Solana",
+      "Ethereum",
+      "Base",
+      "Arbitrum",
+      "WebSockets",
+      "Docker",
+    ],
     badges: ["Superteam Grantee", "8,000+ Users"],
     stats: [
       { value: "8K+", label: "Active Users" },
@@ -30,7 +39,16 @@ export const featuredProjects = [
     image: "/sc0pe-cover.jpg",
     link: "https://sc0pe.xyz",
     liveUrl: "https://sc0pe.xyz",
-    tags: ["Next.js", "TypeScript", "0G Chain", "Ethereum", "Base", "BSC", "AI Agents", "On-chain Analytics"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "0G Chain",
+      "Ethereum",
+      "Base",
+      "BSC",
+      "AI Agents",
+      "On-chain Analytics",
+    ],
     badges: ["#1 in 0G Ecosystem", "3,200+ Users"],
     stats: [
       { value: "3.2K+", label: "Users" },
@@ -50,7 +68,15 @@ export const featuredProjects = [
     image: "/predictefy logo.png",
     link: "https://predictefy.com",
     liveUrl: "https://predictefy.com",
-    tags: ["Next.js", "TypeScript", "Python", "Data Normalization", "ETL", "REST APIs", "PostgreSQL"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "Data Normalization",
+      "ETL",
+      "REST APIs",
+      "PostgreSQL",
+    ],
     badges: ["5+ Markets Integrated"],
     stats: [
       { value: "5+", label: "Markets Integrated" },
@@ -60,7 +86,51 @@ export const featuredProjects = [
     category: "featured",
     accentColor: "amber",
   },
-]
+  {
+    title: "Bayse Trading Bot",
+    subtitle: "Telegram-Native Prediction Market Trading Bot",
+    description:
+      "Built a full-featured Telegram trading companion for Bayse Markets — watch sports prediction markets, get smart alerts with context-rich match intelligence, and execute trades without leaving Telegram. Features sports market browsing with pagination and multi-outcome navigation, order book depth and ticker stats, historical head-to-head records, team form analysis, player stats, injury reports, model predictions, smart alerts (pre-match, live, price, volume spikes), portfolio management with P&L tracking, multi-currency wallet (USD/NGN), and opportunity scoring.",
+    image: "/bayse-agent.jpeg",
+    link: "http://t.me/coresightpredbot",
+    liveUrl: "http://t.me/coresightpredbot",
+    tags: [
+      "Node.js",
+      "grammY",
+      "MongoDB",
+      "Telegram Bot",
+      "Prediction Markets",
+      "Sports Intelligence",
+      "WebSockets",
+    ],
+    badges: ["Sports Intelligence", "Smart Alerts", "Telegram Native"],
+    category: "featured",
+    accentColor: "cyan",
+  },
+  {
+    title: "Smart Transaction Stack",
+    subtitle:
+      "Autonomous Solana Transaction Infrastructure with AI Fault Recovery",
+    description:
+      "Built a modular autonomous transaction infrastructure stack for Solana that ingests live network telemetry via Yellowstone gRPC, constructs and submits Jito bundles with dynamic tips calculated from real-time tip markets, and tracks transaction lifecycles across commitment levels. Features a GPT-4o-mini AI operator that autonomously diagnoses failures and decides recovery strategies. Discovered during mainnet testing that Jito's block engine was silently dropping bundles due to rent-exemption simulation failures — invisible without the onBundleResult callback — and after resolving it, reliably landed bundles at 5M lamports. Produced 10 verified mainnet lifecycle entries with Solscan verification for a Jito bounty.",
+    image: "/sts.svg",
+    link: "https://app.notion.com/p/Smart-Transaction-Stack-Architecture-System-Design-Coresight-Autonomous-Agent-Integration-385b11c673fb80d48673dd6e8e1d86fd",
+    liveUrl:
+      "https://app.notion.com/p/Smart-Transaction-Stack-Architecture-System-Design-Coresight-Autonomous-Agent-Integration-385b11c673fb80d48673dd6e8e1d86fd",
+    tags: [
+      "Solana",
+      "Jito",
+      "TypeScript",
+      "gRPC",
+      "AI Agents",
+      "WebSockets",
+      "Blockchain Infrastructure",
+    ],
+    badges: ["AI-Powered Recovery", "Mainnet Verified", "Jito Bounty"],
+    category: "featured",
+    accentColor: "purple",
+  },
+];
 
 // ============================================
 // SQL ANALYTICS PROJECTS (Dune + Flipside)
@@ -68,7 +138,8 @@ export const featuredProjects = [
 export const sqlProjects = [
   {
     title: "Ethereum OS deep dive",
-    description: "A dashboard tracking the gamified Eth OS airdrop campaign, analyzing code-farming, epoch progress, and AIR token accumulation mechanics.",
+    description:
+      "A dashboard tracking the gamified Eth OS airdrop campaign, analyzing code-farming, epoch progress, and AIR token accumulation mechanics.",
     image: "/ethos.jpg",
     link: "https://dune.com/cryptall/ethereum-os",
     client: "Eth OS",
@@ -77,7 +148,8 @@ export const sqlProjects = [
   },
   {
     title: "THX Network Analysis",
-    description: "Comprehensive analysis of THX Network's token distribution and user engagement metrics.",
+    description:
+      "Comprehensive analysis of THX Network's token distribution and user engagement metrics.",
     image: "/thx-network.jpg",
     link: "https://dune.com/cryptall/analysis-on-thx-network",
     client: "THX Network",
@@ -86,7 +158,8 @@ export const sqlProjects = [
   },
   {
     title: "OLAS Token Distribution",
-    description: "Detailed analysis of OLAS token distribution patterns and holder demographics.",
+    description:
+      "Detailed analysis of OLAS token distribution patterns and holder demographics.",
     image: "/olas.jpg",
     link: "https://dune.com/cryptall/olas-token-distribution",
     client: "OLAS Network",
@@ -95,7 +168,8 @@ export const sqlProjects = [
   },
   {
     title: "GU Trade Analysis",
-    description: "Trading patterns and market analysis for GU Factory's digital assets.",
+    description:
+      "Trading patterns and market analysis for GU Factory's digital assets.",
     image: "/gu-trade.jpg",
     link: "https://dune.com/cryptall/gu-trade",
     client: "GU Factory",
@@ -104,7 +178,8 @@ export const sqlProjects = [
   },
   {
     title: "Agents.fun Analytics",
-    description: "User engagement and platform metrics for the Agents.fun platform.",
+    description:
+      "User engagement and platform metrics for the Agents.fun platform.",
     image: "/agentsdotfun.jpg",
     link: "https://dune.com/cryptall/agentsdotfun",
     client: "Agents.fun",
@@ -113,7 +188,8 @@ export const sqlProjects = [
   },
   {
     title: "AG Sniper Bot Analysis",
-    description: "Performance tracking and strategy analysis for AG Sniper Bot.",
+    description:
+      "Performance tracking and strategy analysis for AG Sniper Bot.",
     image: "/agsniper.jpg",
     link: "https://dune.com/ag_bot/ag-sniper-bot",
     client: "AG Sniper Bot",
@@ -122,7 +198,8 @@ export const sqlProjects = [
   },
   {
     title: "EVM Token Analyzer",
-    description: "Comprehensive token analysis tool for EVM-compatible blockchains.",
+    description:
+      "Comprehensive token analysis tool for EVM-compatible blockchains.",
     image: "/copilot.jpg",
     link: "https://dune.com/my_copilot_bae/evm-token-analyzer",
     client: "Copilot BAE",
@@ -131,7 +208,8 @@ export const sqlProjects = [
   },
   {
     title: "LSD Investment Opportunities",
-    description: "Research on the best Liquid Staking Derivative investment opportunities on Ethereum.",
+    description:
+      "Research on the best Liquid Staking Derivative investment opportunities on Ethereum.",
     image: "/ltv.jpg",
     link: "https://dune.com/cryptall/market-opportunities-research",
     client: "LTV Protocol",
@@ -140,7 +218,8 @@ export const sqlProjects = [
   },
   {
     title: "Sei DeFi Ecosystem Analysis",
-    description: "Comprehensive analysis of the DeFi ecosystem on the Sei blockchain.",
+    description:
+      "Comprehensive analysis of the DeFi ecosystem on the Sei blockchain.",
     image: "/sei.jpg",
     link: "https://flipsidecrypto.xyz/cryptall/sei-defi-world-ShOoiL",
     client: "Sei Network",
@@ -149,7 +228,8 @@ export const sqlProjects = [
   },
   {
     title: "NEAR Protocol Staking Analysis",
-    description: "In-depth analysis of staking patterns and validator performance on the NEAR Protocol.",
+    description:
+      "In-depth analysis of staking patterns and validator performance on the NEAR Protocol.",
     image: "/near.jpg",
     link: "https://flipsidecrypto.xyz/cryptall/staking-on-near-protocol-Cg2v0h",
     client: "Near Protocol",
@@ -158,7 +238,8 @@ export const sqlProjects = [
   },
   {
     title: "Thorchain RUNE Analysis",
-    description: "Detailed analysis of RUNE token metrics, liquidity pools, and trading patterns on Thorchain.",
+    description:
+      "Detailed analysis of RUNE token metrics, liquidity pools, and trading patterns on Thorchain.",
     image: "/thorchain.jpg",
     link: "https://flipsidecrypto.xyz/cryptall/analyzing-rune-IYdmTX",
     client: "Thorchain",
@@ -167,14 +248,21 @@ export const sqlProjects = [
   },
   {
     title: "Burrow Finance on NEAR Protocol",
-    description: "Performance analysis and user behavior study of Burrow Finance on the NEAR Protocol.",
+    description:
+      "Performance analysis and user behavior study of Burrow Finance on the NEAR Protocol.",
     image: "/burrow.jpg",
     link: "https://flipsidecrypto.xyz/cryptall/burrow-finance-on-near-protocol-ntDZLj",
     client: "Burrow Finance",
-    tags: ["NEAR Protocol", "Burrow Finance", "DeFi", "Lending", "Flipside Crypto"],
+    tags: [
+      "NEAR Protocol",
+      "Burrow Finance",
+      "DeFi",
+      "Lending",
+      "Flipside Crypto",
+    ],
     category: "sql",
   },
-]
+];
 
 // ============================================
 // PYTHON ANALYTICS PROJECTS (Kaggle)
@@ -182,7 +270,8 @@ export const sqlProjects = [
 export const pythonProjects = [
   {
     title: "Whales Market Fees: ETH vs SOL",
-    description: "Comparative analysis of transaction fees for whale addresses on Ethereum and Solana networks.",
+    description:
+      "Comparative analysis of transaction fees for whale addresses on Ethereum and Solana networks.",
     image: "/whales.jpg",
     link: "https://www.kaggle.com/code/omojoallwell/comparison-of-whales-market-fees-on-eth-and-sol",
     tags: ["Ethereum", "Solana", "Fee Analysis", "Python", "Pandas"],
@@ -190,15 +279,23 @@ export const pythonProjects = [
   },
   {
     title: "Oracle Price Feed Analysis",
-    description: "Analysis of oracle price feeds accuracy and reliability across different blockchain networks.",
+    description:
+      "Analysis of oracle price feeds accuracy and reliability across different blockchain networks.",
     image: "/pragma.png",
     link: "https://www.kaggle.com/code/omojoallwell/oracle-price-feed-analysis",
-    tags: ["Oracles", "Price Feeds", "Data Reliability", "Python", "Time Series"],
+    tags: [
+      "Oracles",
+      "Price Feeds",
+      "Data Reliability",
+      "Python",
+      "Time Series",
+    ],
     category: "python",
   },
   {
     title: "ETH DEX Performance Comparison",
-    description: "Comparative analysis of performance metrics for major decentralized exchanges on Ethereum.",
+    description:
+      "Comparative analysis of performance metrics for major decentralized exchanges on Ethereum.",
     image: "/uniswap.jpg",
     link: "https://www.kaggle.com/code/omojoallwell/comparison-of-eth-dex-performance",
     tags: ["DEX", "Ethereum", "Performance Analysis", "Python", "Matplotlib"],
@@ -206,10 +303,11 @@ export const pythonProjects = [
   },
   {
     title: "ERC20 Transfers Analysis",
-    description: "In-depth analysis of ERC20 token transfer patterns and user behaviors on Ethereum.",
+    description:
+      "In-depth analysis of ERC20 token transfer patterns and user behaviors on Ethereum.",
     image: "/erc.png",
     link: "https://www.kaggle.com/code/omojoallwell/assignment-on-erc20",
     tags: ["ERC20", "Token Transfers", "User Behavior", "Python", "NetworkX"],
     category: "python",
   },
-]
+];
